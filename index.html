@@ -7,10 +7,18 @@
 
   <script>
     function activate(index) {
+      const element = document.querySelectorAll(".project")[index];
+      const isActive = element.classList.contains("active");
+      if (isActive) return;
+
+      closeAll();
+      document.querySelectorAll(".project")[index].classList.add("active");
+    }
+
+    function closeAll(event) {
+      event?.stopPropagation();
       const projects = document.querySelectorAll(".project");
-      const alreadyHasClass = projects[index].classList.contains("active");
       for (const el of projects) el.classList.remove("active");
-      if (!alreadyHasClass) projects[index].classList.add("active");
     }
   </script>
 
@@ -35,6 +43,7 @@
               <div class="project-logo neobrain"></div>
               <div class="tag green">Job</div>
             </div>
+            <div class="close" onClick="closeAll(event)"></div>
 
             <div class="project-content">
               <h3>
@@ -51,6 +60,10 @@
                 <p style="margin-top: 8px">
                   Flashbrand was acquired by Neobrain in 2023.
                 </p>
+
+                <div class="tech">
+                  Tech: Vue, Nodejs, Express, Typresript, SAP HANA
+                </div>
               </div>
             </div>
           </div>
@@ -60,6 +73,7 @@
               <div class="project-logo flashbrand"></div>
               <div class="tag green">Project → Job</div>
             </div>
+            <div class="close" onClick="closeAll(event)"></div>
 
             <div class="project-content">
               <h3>
@@ -76,6 +90,9 @@
                 <p style="margin-top: 8px">
                   Flashbrand was acquired by Neobrain in 2023.
                 </p>
+                <div class="tech">
+                  Tech: Vue, Nodejs, Express, Typresript, SAP HANA
+                </div>
               </div>
             </div>
           </div>
@@ -85,6 +102,7 @@
               <div class="project-logo omikron"></div>
               <div class="tag blue">Project</div>
             </div>
+            <div class="close" onClick="closeAll(event)"></div>
 
             <div class="project-content">
               <h3>
@@ -99,9 +117,11 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   pulvinar ultricies justo, eget suscipit velit vehicula sed.
                   Nulla facilisi. Integer id velit eros. Ut sed odio vel sem
-                  vehicula commodo. Phasellus accumsan fringilla ipsum, vitae
-                  molestie dolor luctus a. Vivamus vitae tristique nunc.
+                  vehicula commodo. Phasellus accumsan fringilla ipsum, vitae.
                 </p>
+                <div class="tech">
+                  Tech: Vue, Nodejs, Express, Typresript, SAP HANA
+                </div>
               </div>
             </div>
           </div>
@@ -111,6 +131,7 @@
               <div class="project-logo rl"></div>
               <div class="tag blue">Project</div>
             </div>
+            <div class="close" onClick="closeAll(event)"></div>
 
             <div class="project-content">
               <h3>
@@ -125,9 +146,11 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   pulvinar ultricies justo, eget suscipit velit vehicula sed.
                   Nulla facilisi. Integer id velit eros. Ut sed odio vel sem
-                  vehicula commodo. Phasellus accumsan fringilla ipsum, vitae
-                  molestie dolor luctus a. Vivamus vitae tristique nunc.
+                  vehicula commodo. Phasellus accumsan fringilla ipsum, vita.
                 </p>
+                <div class="tech">
+                  Tech: Vue, Nodejs, Express, Typresript, SAP HANA
+                </div>
               </div>
             </div>
           </div>
