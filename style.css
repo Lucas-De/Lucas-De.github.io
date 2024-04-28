@@ -103,7 +103,7 @@ h3 {
 }
 
 .project-header {
-  max-height: 100px;
+  max-height: 80px;
   overflow: hidden;
 }
 
@@ -273,5 +273,9 @@ a {
 
   p {
     font-size: 18px;
+  }
+
+  .active .more-info {
+    max-height: 200px;
   }
 }
