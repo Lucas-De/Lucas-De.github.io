@@ -2,10 +2,14 @@
   --card-color: #efeff0;
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 *,
 *::before,
 *::after {
-  transition: all 3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -95,6 +99,7 @@ h3 {
 }
 
 .active .project-logo {
+  transition: all 0.2s ease-in-out;
   height: 0px;
 }
 
@@ -292,5 +297,10 @@ a {
   .more-btn {
     height: 28px;
     margin-top: 8px;
+  }
+
+  .project:before {
+    inset: 0px !important;
+    border-radius: 32px;
   }
 }
