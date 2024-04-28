@@ -180,7 +180,7 @@ h3 {
 .tech {
   margin-top: 8px;
   font-weight: 500;
-  color: darkgray;
+  color: grey;
 }
 
 .more-btn {
@@ -234,12 +234,18 @@ a {
   background-size: cover;
   height: 32px;
   width: 32px;
+  transform: scale(0.3);
 }
 
 .active .close {
   transition-delay: 0.2s;
   opacity: 0.2;
   cursor: pointer;
+  transform: scale(1);
+}
+
+.active .tag {
+  opacity: 0;
 }
 
 @media (max-width: 880px) {
