@@ -114,7 +114,7 @@ h3 {
 
 .active .more-info {
   max-height: 300px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .more-info {
@@ -178,7 +178,7 @@ h3 {
 }
 
 .tech {
-  margin-top: 14px;
+  margin-top: 8px;
   font-weight: 500;
   color: darkgray;
 }
@@ -253,7 +253,7 @@ a {
   }
 
   .project {
-    aspect-ratio: none;
+    aspect-ratio: unset;
     height: 350px;
   }
 }
@@ -277,5 +277,10 @@ a {
 
   .active .more-info {
     max-height: 200px;
+  }
+
+  .more-btn {
+    height: 28px;
+    margin-top: 8px;
   }
 }
