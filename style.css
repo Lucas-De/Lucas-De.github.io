@@ -2,11 +2,18 @@
   --card-color: #efeff0;
 }
 
+*,
+*::before,
+*::after {
+  transition: all 0.3s ease-in-out;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
+  color: #252525;
 }
 
 main {
@@ -57,11 +64,12 @@ h3 {
   overflow: visible;
   position: relative;
   width: 100%;
-  padding: 24px 24px 32px 24px;
+  padding: 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .project:hover:before {
@@ -69,14 +77,50 @@ h3 {
   border-radius: 40px;
 }
 
-.project:hover .hidden-info {
+.active .project-content {
+  min-height: 100%;
+}
+
+.active .project-logo {
+  height: 0px;
+}
+
+.active .project-header {
+  max-height: 0px;
+}
+
+.project-header {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.active .more-btn {
+  height: 0px !important;
+  margin-top: 0px !important;
+}
+
+.active .more-info {
+  max-height: 300px;
+  margin-top: 12px;
+}
+
+.more-info {
+  margin-top: 0px;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.project-content {
+  min-height: 0px;
+}
+
+.project:hover .more-btn {
   height: 28px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .project:before {
   content: "";
-  transition: all 0.3s ease-in-out;
   background-color: var(--card-color);
   position: absolute;
   inset: 0px;
@@ -114,8 +158,9 @@ h3 {
   margin-right: 12px;
 }
 
-.hidden-info {
-  transition: all 0.3s ease-in-out;
+.more-btn {
+  font-weight: 500;
+  color: darkgray;
   overflow: hidden;
   height: 0;
 }
@@ -123,4 +168,34 @@ h3 {
 p {
   margin: 0px;
   font-size: 24px;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.tag {
+  border-radius: 20px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-right: 12px;
+  align-self: start;
+}
+
+.tag.green {
+  background: rgba(65, 172, 111, 0.15);
+  border: 1px solid rgba(65, 172, 111, 0.15);
+  color: rgb(65, 172, 111);
+}
+
+.tag.blue {
+  background: rgba(30, 144, 255, 0.15);
+  border: 1px solid rgba(30, 144, 255, 0.15);
+  color: rgb(30, 144, 255);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -12px;
 }

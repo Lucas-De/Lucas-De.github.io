@@ -5,20 +5,21 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
+  <script>
+    function activate(index) {
+      const projects = document.querySelectorAll(".project");
+      const alreadyHasClass = projects[index].classList.contains("active");
+      for (const el of projects) el.classList.remove("active");
+      if (!alreadyHasClass) projects[index].classList.add("active");
+    }
+  </script>
+
   <body>
     <main>
       <section>
-        <img
-          alt="Jarek Ceborski"
-          width="140"
-          height="140"
-          decoding="async"
-          data-nimg="1"
-          class="sc-ipEyDJ XStmj"
-          src="./lucas.webp"
-        />
+        <img alt="Lucas" width="140" height="140" src="./lucas.webp" />
         <h1>
-          I’m Lucas – software engineer
+          I’m Lucas – Fullstack Developer
           <div class="header-detail">
             I love building products and keeping up with the lastest web-dev
             trends.
@@ -29,47 +30,84 @@
       <section>
         <h2 class="header-detail">My Projects</h2>
         <div class="project-grid">
-          <div class="project">
-            <div class="project-logo flashbrand"></div>
+          <div class="project" onClick="activate(0)">
+            <div class="project-header">
+              <div class="project-logo flashbrand"></div>
+              <div class="tag green">Project → Job</div>
+            </div>
 
-            <div>
+            <div class="project-content">
               <h3>
                 Flashbrand
-                <div class="header-detail">Employee Performance</div>
+                <div class="header-detail">Human Resources SaaS</div>
               </h3>
-              <div class="hidden-info">
-                <div class="project-link">View Site</div>
+              <div class="more-btn">More Info →</div>
+              <div class="more-info">
+                <p>
+                  Flashbrand was co-developed by myself and <a>@Mario</a>. The
+                  platform grew to over 200k users, attracting notable clients
+                  like LVMH.
+                </p>
+                <p style="margin-top: 8px">
+                  Flashbrand was acquired by Neobrain in 2023.
+                </p>
               </div>
             </div>
           </div>
-          <div class="project">
-            <div class="project-logo omikron"></div>
 
-            <div>
+          <div class="project" onClick="activate(1)">
+            <div class="project-header">
+              <div class="project-logo omikron"></div>
+              <div class="tag blue">Project</div>
+            </div>
+
+            <div class="project-content">
               <h3>
                 Omikron
                 <div class="header-detail">Nutrition AI</div>
               </h3>
-              <div class="hidden-info">
-                <div class="project-link">View Site</div>
-                <div class="project-link">View Code</div>
+              <div class="more-btn">More Info →</div>
+
+              <div class="more-info">
+                <!-- <div class="project-link">View Site</div> -->
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pulvinar ultricies justo, eget suscipit velit vehicula sed.
+                  Nulla facilisi. Integer id velit eros. Ut sed odio vel sem
+                  vehicula commodo. Phasellus accumsan fringilla ipsum, vitae
+                  molestie dolor luctus a. Vivamus vitae tristique nunc.
+                </p>
               </div>
             </div>
           </div>
-          <div class="project">
-            <div class="project-logo rl"></div>
 
-            <div>
+          <div class="project" onClick="activate(2)">
+            <div class="project-header">
+              <div class="project-logo rl"></div>
+              <div class="tag blue">Project</div>
+            </div>
+
+            <div class="project-content">
               <h3>
                 Research Thesis
                 <div class="header-detail">Reinforcement Learning</div>
               </h3>
-              <div class="hidden-info">
-                <div class="project-link">Read Paper</div>
+              <div class="more-btn">More Info →</div>
+
+              <div class="more-info">
+                <!-- <div class="project-link">View Site</div> -->
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pulvinar ultricies justo, eget suscipit velit vehicula sed.
+                  Nulla facilisi. Integer id velit eros. Ut sed odio vel sem
+                  vehicula commodo. Phasellus accumsan fringilla ipsum, vitae
+                  molestie dolor luctus a. Vivamus vitae tristique nunc.
+                </p>
               </div>
             </div>
           </div>
-          <div class="project">
+
+          <div class="project" onClick="activate(3)">
             <div></div>
             <h3 class="header-detail">Coming Soon...</h3>
           </div>
