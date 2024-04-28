@@ -17,7 +17,10 @@ body {
 }
 
 main {
-  width: 860px;
+  width: 100%;
+  max-width: 860px;
+  padding: 0px 16px;
+  box-sizing: border-box;
   margin: 0px auto;
 }
 
@@ -50,7 +53,7 @@ h3 {
 }
 
 .header-detail {
-  max-height: 100px;
+  max-height: 200px;
   overflow: hidden;
   color: darkgray;
 }
@@ -237,4 +240,38 @@ a {
   transition-delay: 0.2s;
   opacity: 0.2;
   cursor: pointer;
+}
+
+@media (max-width: 880px) {
+  main {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    aspect-ratio: none;
+    height: 350px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }
