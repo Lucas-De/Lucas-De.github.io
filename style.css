@@ -5,7 +5,7 @@
 *,
 *::before,
 *::after {
-  transition: all 0.3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 body {
@@ -52,8 +52,12 @@ h3 {
   font-size: 32px;
 }
 
+.detail {
+  color: darkgray;
+}
+
 .header-detail {
-  max-height: 200px;
+  max-height: 60px;
   overflow: hidden;
   color: darkgray;
 }
@@ -244,7 +248,7 @@ a {
   transform: scale(1);
 }
 
-.active .tag {
+.active .project-header {
   opacity: 0;
 }
 
