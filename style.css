@@ -122,13 +122,13 @@ h3 {
 }
 
 .active .more-info {
-  max-height: 300px;
+  height: 250px;
   margin-top: 8px;
 }
 
 .more-info {
   margin-top: 0px;
-  max-height: 0px;
+  height: 0px;
   overflow: hidden;
 }
 
@@ -260,6 +260,15 @@ a {
   opacity: 0;
 }
 
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
 @media (max-width: 880px) {
   main {
     max-width: 500px;
@@ -289,12 +298,12 @@ a {
     font-size: 28px;
   }
 
-  p {
+  .project p {
     font-size: 18px;
   }
 
   .active .more-info {
-    max-height: 200px;
+    height: 200px;
   }
 
   .more-btn {

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="46px" viewBox="0 0 52 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vue-logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-220.000000, -484.000000)" fill-rule="nonzero">
+            <g id="vue-logo" transform="translate(220.500000, 484.250000)">
+                <polygon id="Path" fill="#C4C4C4" transform="translate(25.501802, 22.134259) scale(-1, 1) rotate(-180.000000) translate(-25.501802, -22.134259) " points="31.3467297 44.053059 25.5018024 33.9293117 19.6568751 44.053059 0.192434192 44.053059 25.5018024 0.21545935 50.8111706 44.053059"></polygon>
+                <polygon id="Path" fill="#AFACAC" transform="translate(25.501802, 13.366481) scale(-1, 1) rotate(-180.000000) translate(-25.501802, -13.366481) " points="31.3467297 26.5175035 25.5018024 16.3937562 19.6568751 26.5175035 10.3161815 26.5175035 25.5018024 0.21545935 40.6874233 26.5175035"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
