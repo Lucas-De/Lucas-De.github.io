@@ -159,6 +159,10 @@ h3 {
   border-radius: 20px;
 }
 
+.project-logo.klm {
+  background-image: url("./klm-logo.webp");
+}
+
 .project-logo.neobrain {
   background-image: url("./neo-logo.webp");
 }
@@ -176,19 +180,11 @@ h3 {
 }
 
 .project-link {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
-  padding: 4px 8px;
-  background-color: black;
-  color: white;
-  display: inline-block;
-  cursor: pointer;
   margin-right: 12px;
 }
 
 .tech {
-  margin-top: 8px;
-  font-weight: 500;
+  margin: 12px 0px;
   color: grey;
 }
 
@@ -206,6 +202,7 @@ p {
 
 a {
   color: dodgerblue;
+  text-decoration: none;
 }
 
 .tag {
@@ -220,6 +217,12 @@ a {
   background: rgba(65, 172, 111, 0.15);
   border: 1px solid rgba(65, 172, 111, 0.08);
   color: rgb(65, 172, 111);
+}
+
+.tag.red {
+  background: rgba(233, 131, 58, 0.15);
+  border: 1px solid rgba(233, 131, 58, 0.08);
+  color: rgb(233, 131, 58);
 }
 
 .tag.blue {
