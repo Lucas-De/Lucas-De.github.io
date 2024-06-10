@@ -175,6 +175,10 @@ h3 {
   background-image: url("./images/omikron.png");
 }
 
+.project-logo.mediane {
+  background-image: url("./images/mediane-logo.png");
+}
+
 .project-logo.rl {
   background-image: url("./images/rl.webp");
 }

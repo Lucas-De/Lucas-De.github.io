@@ -3,6 +3,7 @@
   <head>
     <title>Lucas</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
@@ -43,9 +44,37 @@
       </section>
 
       <section>
-        <h2 class="header-detail">My Projects</h2>
+        <h2 class="header-detail">Projects & Experience</h2>
         <div class="project-grid">
           <div class="project" onClick="activate(0)">
+            <div class="project-header">
+              <div class="project-logo mediane"></div>
+              <div class="tag green">Founding Engineer</div>
+            </div>
+            <div class="close" onClick="closeAll(event)"></div>
+
+            <div class="project-content">
+              <h3>
+                Mediane
+                <div class="header-detail">Legal-Tech</div>
+              </h3>
+              <div class="more-btn">More Info →</div>
+
+              <div class="more-info">
+                <p>
+                  Single handedly built a full-stack MVP for a pre-seed
+                  legal-tech startup (think Uber for labor rights lawyers),
+                  enabling users to connect with lawyers in minutes via
+                  integrated video chat and secure payments.
+                </p>
+                <div class="tech">
+                  Tech: React, NodeJs, Typresript, SocketIo, Postgres, Docker
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" onClick="activate(1)">
             <div class="project-header">
               <div class="project-logo omikron"></div>
               <div class="tag blue">Project</div>
@@ -86,10 +115,10 @@
             </div>
           </div>
 
-          <div class="project" onClick="activate(1)">
+          <div class="project" onClick="activate(2)">
             <div class="project-header">
               <div class="project-logo neobrain"></div>
-              <div class="tag green">Job: Tech Lead</div>
+              <div class="tag green">Tech Lead</div>
             </div>
             <div class="close" onClick="closeAll(event)"></div>
 
@@ -101,7 +130,7 @@
               <div class="more-btn">More Info →</div>
 
               <div class="more-info">
-                <p>More info coming soon...</p>
+                <p>More info coming soon!</p>
                 <div class="tech">
                   Tech: Vue, NodeJs, Express, SocketIo, Typescript, SAP HANA,
                   Azure
@@ -110,7 +139,7 @@
             </div>
           </div>
 
-          <div class="project" onClick="activate(2)">
+          <div class="project" onClick="activate(3)">
             <div class="project-header">
               <div class="project-logo flashbrand"></div>
               <div class="tag red">Founder (2023 Exit)</div>
@@ -148,7 +177,7 @@
             </div>
           </div>
 
-          <div class="project" onClick="activate(3)">
+          <div class="project" onClick="activate(4)">
             <div class="project-header">
               <div class="project-logo rl"></div>
               <div class="tag blue">Project</div>
@@ -185,10 +214,10 @@
             </div>
           </div>
 
-          <div class="project" onClick="activate(4)">
+          <div class="project" onClick="activate(5)">
             <div class="project-header">
               <div class="project-logo klm"></div>
-              <div class="tag green">Intern: ML Engineer</div>
+              <div class="tag green">ML Engineer Intern</div>
             </div>
             <div class="close" onClick="closeAll(event)"></div>
 
@@ -219,8 +248,8 @@
           AI.
         </p>
         <p>
-          When I'm not coding you can find me working out in central park,
-          climbing or doing gymnastics.
+          When I'm not coding you can find me reading in central park, climbing
+          or doing gymnastics.
         </p>
         <p>
           If you're an entrepreneur, developer or designer interested in working
