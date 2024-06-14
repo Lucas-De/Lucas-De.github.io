@@ -95,7 +95,7 @@ h3 {
 }
 
 .active .project-content {
-  min-height: 100%;
+  min-height: 80%;
 }
 
 .active .project-logo {
